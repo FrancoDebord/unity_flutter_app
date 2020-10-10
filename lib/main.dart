@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:unity_app_flutter/partials/WelcomeScreen.dart';
 import 'package:unity_app_flutter/partials/accueil.dart';
 
 void main() {
@@ -13,10 +14,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Unity App',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        // primarySwatch: Colors.blue,
+        primaryColor: Colors.red,
+        accentColor: Color(0xFFFEF9EB),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: UnityHomePage(title: 'Unity App'),
+      home: WelcomeScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
